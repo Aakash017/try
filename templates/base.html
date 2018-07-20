@@ -1,0 +1,22 @@
+<!-- templates/base.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge" >
+<link type="text/css" rel="stylesheet" href="/assets/css/bootstrap.css">
+<link type="text/css" href="/assets/css/sty.css" rel="stylesheet">
+  <title>{% block title %} Training management{% endblock %}</title>
+</head>
+<body>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+
+</body>
+</html>

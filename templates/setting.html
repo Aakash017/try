@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} Edit profile {% endblock %}
+{% block content %}
+    <form name="EditProfile" method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+    {% for i in p %}
+
+     <h1>{{ i.email }}</h1>
+             <h1>{{ i.first_name }}</h1>
+             <h1>{{ i.last_name }}</h1>
+
+
+        <label >FirstName:</label><br>
+        <input type="text" id="FirstName"  name="FirstName"><br>
+        <label >LastName:</label><br>
+
+        <input type="text" id="LastName"  name="LastName"><br>
+        <button type="submit" class="btn-primary">Submit</button>
+    {% endfor %}
+</form>
+
+
+
+
+
+
+{% endblock %}
